@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXO ALLFITUR</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ===== BACKGROUND VIDEO ===== -->
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="background.mp4" type="video/mp4" />
+    </video>
+
+    <!-- ===== PARTICLES ===== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ===== SPLASH SCREEN ===== -->
+    <div id="splashScreen" class="splash-screen">
+        <video autoplay muted playsinline id="splashVideo">
+            <source src="splash.mp4" type="video/mp4" />
+        </video>
+        <div class="splash-overlay"></div>
+        <div class="splash-content">
+            <div class="splash-title">AXO-ALLFITUR</div>
+            <button class="splash-skip" id="skipBtn">SKIP ➜</button>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div id="mainContent" class="main-content hidden">
+        <div class="container">
+
+            <!-- ===== BANNER VIDEO ===== -->
+            <div class="banner-video">
+                <video autoplay muted loop playsinline>
+                    <source src="banner.mp4" type="video/mp4" />
+                </video>
+                <div class="banner-overlay">
+                    <div class="banner-title">⬡ AXO ALLFITUR</div>
+                    <div class="banner-badge">⚡ PREMIUM</div>
+                </div>
+            </div>
+
+            <!-- ===== HEADER ===== -->
+            <div class="header">
+                <div class="brand">
+                    <div class="logo">⬡</div>
+                    <div class="brand-text"><strong>AXO</strong><small>ALLFITUR</small></div>
+                </div>
+                <div class="online-badge"><span class="dot"></span> Online</div>
+            </div>
+            <div class="subtitle">Download video & audio · Cari lirik · Chat AI · Roblox Stalk</div>
+
+            <!-- ===== PAGE CONTAINER (untuk konten utama) ===== -->
+            <div id="pageContainer"></div>
+
+            <!-- ===== LIQUID NAVIGATION (GEDE) ===== -->
+            <nav class="liquid-nav">
+                <ul>
+                    <li class="liquid-list active" data-page="sosmed">🌐 Sosmed</li>
+                    <li class="liquid-list" data-page="music">🎵 Music</li>
+                    <li class="liquid-list" data-page="chat">🤖 AI Chat</li>
+                    <li class="liquid-list" data-page="lyric">📝 Lyric</li>
+                    <li class="liquid-list" data-page="roblox">🎮 Roblox</li>
+                    <li class="liquid-list" data-page="about">👤 About</li>
+                </ul>
+                <div class="liquid-indicator"></div>
+            </nav>
+
+            <!-- ===== JOIN CHANNEL ===== -->
+            <div class="join-channel">
+                <a href="https://whatsapp.com/channel/0029Vb9CIYK3rZZXOP1Thg2U" target="_blank">
+                    📢 JOIN SALURAN WA AXO →
+                </a>
+                <div class="sub">Dapatkan info update terbaru</div>
+            </div>
+
+            <div class="footer"><strong>AXO</strong> · All-in-One · Edukasi</div>
+        </div>
+    </div>
+
+    <!-- ===== AUDIO ===== -->
+    <audio id="dashboardSound" src="lagu.mp3" preload="auto" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
